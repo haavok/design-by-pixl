@@ -1,0 +1,407 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+/* POSITIONING */
+.icon-bar {
+	position: fixed;
+	top: 0px;
+	z-index: 999;
+	background: none;
+}
+
+section {
+	margin-top: 50px;
+}
+
+.project-landing {
+  margin: 0;
+}
+
+footer {
+	margin-top: 100px;
+  padding-top: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+footer div.row {
+  padding-bottom: 20px;
+}
+
+.skill-row {
+  padding-top: 30px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.index-landing {
+  margin-top: 75px;
+}
+
+.thanks img {
+  margin-top: 5vh;
+}
+
+.project-row p {
+  margin: 30px auto;
+}
+  
+.project-row h3 + p {
+  margin-top: 0px;
+  margin-bottom: 30px auto;
+}
+  
+.project-row h3 {
+  margin-top: 30px;
+}
+
+#about row {
+  width: 100%;
+  margin: 0 15px;
+}
+
+#home {
+  min-height: 100vh;
+}
+
+#about h2{
+  padding-top: 50px;
+}
+
+
+
+/* TYPOGRAPHY */
+html {
+  color: #413526;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  color: #F54A66;
+}
+
+h3 {
+  color: #00A487;
+  font-weight: 300;
+}
+
+.taglines {
+  padding-top: 85px;
+  font-family: 'Raleway', sans-serif;
+  color: #00A487;
+  font-size: 1.2em;
+}
+
+#home,
+#home h1 {
+  color: #FFFFFF;
+}
+
+#home h1 {
+  font-size: 1.5em;
+  margin-top: 15vh;
+}
+
+.project-landing h1 {
+  color: #00A487;
+}
+
+.project-landing h2 {
+  font-size: 1.5em;
+}
+
+.headline {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #00A487;
+}
+
+.thumbnail-body p {
+  color: #F54A66;
+}
+
+/* ICON BAR NAVIGATION STYLING */
+.icon-bar a,
+.icon-bar a i {
+  color: #FFFFFF;
+  background-color: #F59B52;
+}
+
+.item {
+  border-right: solid 3px #FFFFFF;
+  border-bottom: solid 3px #FFFFFF;
+}
+
+.item:last-child {
+  border-right: none;
+}
+
+.icon-bar a:hover,
+.icon-bar a:hover i {
+    color: #F59B52;
+    background-color: #FFFFFF;
+    transition: ease-in-out .4s;
+}
+
+/* BUTTON STYLE */
+.button {
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  background: #F59B52;
+  border: 3px solid #F59B52;
+}
+
+.button:hover {
+  color: #F59B52;
+  background: none;
+  border: 3px solid #F59B52;
+}
+
+/* FORM STYLE */
+input[type="text"],
+textarea {
+  border: none;
+  border-bottom: solid 3px #F59B52;
+  box-shadow: none;
+  color: #413526;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: solid 3px #00A487;
+}
+
+/* BACKGROUND IMAGES */
+#home {
+  background-image: url("../images/background-green-pixels.svg");
+  background-size: 100%;
+  margin-top: 0px;
+  background-position: center;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+}
+
+#home h1 {
+  /* vh unit keeps the padding relative to the viewport height */
+  padding-top: 20vh;
+}
+
+.thanks {
+  background-image: url("../images/background-graph-paper.png");
+}
+
+#about {
+  background-image: url("../images/background-graph-paper.png");
+  border-top: solid 3px #00A487;
+  border-bottom: solid 3px #00A487;
+}
+
+footer {
+  background-image: url("../images/background-graph-paper.png");
+  border-top: solid 3px #F54A66;
+}
+
+.project-landing {
+  background-image: url("../images/background-graph-paper.png");
+  border-bottom: solid 3px #00A487;
+  /* vh unit keeps the padding relative to the viewport height */
+  padding: 20vh 0 20vh 0;
+}
+
+/* MEDIA QUERY - MEDIUM SCREEN SIZE */
+@media only screen and (min-width: 40.063em) { 
+  /* PHOTO OVERLAY - STATIC EFFECT*/
+  .thumbnail {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding: 0;
+  }
+  
+  .thumbnail-body {
+    position: absolute;
+    bottom: 0;
+    background: rgba(245, 74, 102, 0.7);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    margin: 0;
+  }
+  
+   /* TYPOGRAPHY */
+  html {
+    font-size: 1em;
+  }
+  
+  .thumbnail-body h3,
+  .thumbnail-body p {
+    color: #FFFFFF;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  .project-landing h2 {
+    font-size: 1.75em;
+  }
+  
+  .headline {
+    font-size: 3em;
+  }
+  
+  .taglines {
+    font-size: 2em;
+  }
+  
+  /* POSITIONING */
+  #home {
+    min-height: 100vh;
+  }
+  
+  #home h1 {
+    padding-top: 25vh;
+    font-size: 4em;
+  }
+  
+  .project-row {
+    margin: 30px auto;
+  }
+  
+  section {
+    margin-top: 150px;
+  }
+  
+  .headline {
+    margin-top: 10vh;
+  }
+  
+  .taglines {
+    padding-top: 10px;
+    color: #FFFFFF;
+  }
+}
+
+/* MEDIA QUERY - LARGE SCREEN SIZE */
+@media only screen and (min-width: 64.063em) { 
+  /* PHOTO OVERLAY - HOVER EFFECT */
+  .thumbnail {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding: 0;
+  }
+   
+  .thumbnail-image { 
+  	display: block;
+  }
+   
+  .thumbnail-body {
+    opacity: 0;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    width: 100%;
+  }
+   
+  .thumbnail-body:hover { 
+  	opacity: 1;
+  }
+  
+  .thumbnail-body h3 { 
+  	margin-top: 15%; 
+  }
+   
+  .thumbnail-body p { 
+  	margin-bottom: 1.5em; 
+  }
+  
+  .thumbnail-body a {
+    margin: 0;
+  }
+  
+  /* SOCIAL MEDIA ICON HOVER SWAP */
+  .social-icon:hover img:first-child {
+    display: none;
+  }
+  
+  .social-icon:hover img:last-child {
+    display: inline-block;
+  }
+  
+  /* ICON BAR STYLING */
+  .item {
+     border: none;
+     border-bottom: solid 3px #FFFFFF;
+  }
+
+  .item:last-child {
+    border-bottom: none;
+  }
+  
+  .icon-bar a:hover {
+    color: #F59B52;
+    background-color: #FFFFFF;
+    transition: ease-in-out .4s;
+  }
+
+  .item i:hover {
+    color: #F59B52;
+  }
+  
+  /* TYPOGRAPHY */
+  .taglines {
+    font-size: 2em;
+  }
+  
+  h1 {
+    font-size: 4em;
+  }
+  
+  .project-landing h2 {
+    font-size: 2.5em;
+    padding-bottom: 15px;
+  }
+  
+  /* BACKGROUND IMAGES */
+  #home {
+    background-size: 80%;
+  }
+  
+  /* POSITIONING */
+  #home {
+    margin-top: 0;
+  }
+  
+  .index-landing {
+    margin-top: 0px;
+  }
+}

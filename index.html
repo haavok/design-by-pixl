@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="keywords" content="front-end developer, photography, interactive design, graphic design, illustrator, lincoln, nebraska, design by pixl">
+		<link rel="stylesheet" type="text/css" href="styles/foundation.css">
+		<link rel="stylesheet" type="text/css" href="styles/pixl-styles.css">
+		<link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
+		<link rel="shortcut icon" href="favicon.png">
+		<title>Pixl</title>
+		<script src="scripts/vendor/modernizr.js"></script>
+	</head>
+	<body>
+		
+		<aside>
+			<nav>
+				<div class="icon-bar large-vertical four-up">
+					<a class="item" role="button" tabindex="0" href="index.html">
+						<i class="fi-home"></i>
+						<p class="hide-for-small-only">home</p>
+					</a>
+					<a class="item" role="button" tabindex="0" href="#portfolio">
+						<i class="fi-book"></i>
+						<p class="hide-for-small-only">portfolio</p>
+					</a>
+					<a class="item" role="button" tabindex="0" href="#about">
+						<i class="fi-torso-female"></i>
+						<p class="hide-for-small-only">about me</p>
+					</a>
+					<a class="item" role="button" tabindex="0" href="#contact">
+						<i class="fi-comment"></i>
+						<p class="hide-for-small-only">contact me</p>
+					</a>
+				</div>				
+			</nav>
+		</aside>
+		
+		<main>
+			<section id="home">
+				<div class="index-landing row">
+					<h1 class="text-center">Hi, I&rsquo;m pixl.</h1>
+				</div>
+				<div class="row text-center">
+					<p class="taglines">I&rsquo;m <span class="typed"></span></p>
+					<noscript class="taglines">
+						I&rsquo;m a graphic designer. I&rsquo;m a developer. I&rsquo;m an interactive designer. I&rsquo;m a nerd.
+						I&rsquo;m a photographer. I&rsquo;m an illustrator.
+					</noscript>
+				</div>
+			</section>
+			
+			<section id="portfolio">					 
+				<div data-interchange="[portfolio-default.html, (default)], [portfolio-medium.html, (medium-only)]">
+					<!-- Content here is dynamically rendered based on the size of the users viewport via Foundation Interchange -->	
+				</div><!-- end data interchange -->
+			</section>
+			
+			<section id="about">
+				<h2 class="text-center">Who is pixl?</h2>
+				<div class="row">
+					<img class="medium-6 medium-offset-1 large-4 large-offset-2 columns" src="images/profile-pic.jpg" alt="Cody Johnson">
+					<div class="medium-5 large-4 columns end">
+						<p>I&rsquo;m pixl, but my real name is Cody Johnson. I am a graphic designer located in Lincoln, Nebraska with a love for all 
+							things nerdy. I love to create and I focus my talents on web design and development, interactive design, and digital 
+							photography.</p>
+						<h3>My Specialties</h3>
+						<div class="row"><!-- row of skill icons -->
+							<img class="small-6 columns" src="images/icon-skill-development.svg" alt="development icon">
+							<img class="small-6 columns end" src="images/icon-skill-photography.svg" alt="photography icon">
+						</div><!-- end row -->
+						<div class="skill-row row"><!-- row of skill icons -->
+							<img class="small-6 columns" src="images/icon-skill-interactive.svg" alt="interactive icon">
+							<img class="small-6 columns end" src="images/icon-skill-web-design.svg" alt="web design icon">
+						</div><!-- end row of skill icons -->
+					</div><!-- end column -->
+				</div><!-- end row -->
+			</section>
+
+			<section id="contact">
+				<div class="row">
+					<h2 class="text-center">Let&rsquo;s Make Something Together!</h2>
+				</div><!-- end row -->
+				<div class="row">
+					<div class="medium-5 medium-offset-1 large-4 large-offset-2 columns">
+						<p>If you like my style and would like for us to work together, drop me a line!</p>
+						<p><a href="tel://14024291748">402.429.1748</a></p>
+						<p><a href="mailto:holla@designbypixl.com">holla@designbypixl.com</a></p>
+					</div><!-- end class -->
+					<div class="medium-5 large-4 columns end">
+						<form method="post" action="contact-engine.php">
+							<label>
+								Your Name
+								<input class="text-input" type="text" name="Name" id="Name" placeholder="John Doe">
+							</label>
+							<label>
+								Your Email
+								<input class="text-input" type="text" name="Email" id="Email" placeholder="john@mail.com">
+							</label>
+							<label>
+								Your Message
+								<textarea class="text-input" rows="2" name="Message" id="Message" placeholder="Tell me what you want, what you really really want."></textarea>
+							</label>
+							<input class="button small-12 medium-7 large-5 columns end right" type="submit" value="Send">
+						</form>
+					</div><!-- end column -->
+				</div><!-- end row -->
+			</section>
+		</main>
+
+		<footer>
+			<div data-interchange="[footer-medium-index.html, (default)], [footer-small-index.html, (small-only)]">
+				<!-- Content here is dynamically rendered based on the size of the users viewport via Foundation Interchange -->	
+			</div>
+		</footer>
+		
+		<script src="scripts/vendor/jquery.js"></script>
+		<script src="scripts/vendor/fastclick.js"></script>
+		<script src="scripts/vendor/typed.js-master/js/typed.js"></script>
+		<script>
+  			$(function(){
+      			$(".typed").typed({
+        			strings: ["a graphic designer.", "a developer.", "an interactive designer.", "a nerd.", "a photographer.", "an illustrator."],
+        			typeSpeed: 0,
+					loop: true
+      			});
+  			});
+		</script>
+		<script src="scripts/vendor/viewport-units-buggyfill.js"></script>
+  		<script src="scripts/vendor/viewport-units-buggyfill.hacks.js"></script>
+  		<script>window.viewportUnitsBuggyfill.init({
+	   		 // ignore browser capability, run this puppy everywhere
+			force: true,
+	   		 // milliseconds to delay between updates of viewport-units
+			// caused by orientationchange, pageshow, resize events
+	    	refreshDebounceWait: 250,
+	    	hacks: window.viewportUnitsBuggyfillHacks
+  		});</script>
+		<script src="scripts/foundation/foundation.js"></script>
+		<script src="scripts/foundation/foundation.interchange.js"></script>
+		<script>
+  			$(document).foundation();
+		</script>
+	</body>
+</html>
